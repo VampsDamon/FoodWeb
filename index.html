@@ -8,19 +8,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="nav.js" defer></script>
     <title>Sid-Restro</title>
 </head>
 
 <body>
-    <nav class="navbar ">
+    <nav class="navbar nav-width ">
         <div class="navbar-container container">
-            <input type="checkbox">
-            <div class="hamburger-lines">
-                <span class="line line1">
-                </span>
-                <span class="line line2"></span>
-                <span class="line line3"></span>
-            </div>
+            <h1 class="logo">FR</h1>
             <ul class="menu-items">
                 <li><a href="#showcase">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -28,12 +23,19 @@
                 <li><a href="#food-menu">Menu</a></li>
                 <li><a href="#testimonial">Testimonial</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <ul class="links">
+                  <li><i class="fa-brands fa-instagram fa-2x" style="color: #16a083;"></i></li>
+                  <li><i class="fa-solid fa-envelope fa-2x" style="color: #16a083;"></i></li>
+                  <li><i class="fa-brands fa-youtube fa-2x" style="color: #16a083;"></i></li>
+                </ul>
             </ul>
-            <h1 class="logo">FR</h1>
+             <button class="nav-toggle" id="toggle">
+            <i class="fas fa-bars fa-2x" style="color: #16a083;""></i>
+          </button>
         </div>
     </nav>
 
-    <section class="showcase-area">
+    <section class="showcase-area" id="showcase">
         <div class="showcase-container">
             <h1 class="main-title">Eat Right Food</h1>
             <p>Eat Healthy food,it is goodfor your health</p>
@@ -59,38 +61,224 @@
 
 
     <section id="category">
-        <div class="food-category">
-            <h2>Types of food</h2>
+        <h2 class="container">Types of food</h2>
+        <div class="food-container container">
             <div class="food-type type1">
                 <div class="img-container">
                     <img src="./img/food1.jpg" alt="">
-                </div>
-                <div class="img-content">
-                    <h3>Fruits</h3>
-                    <a href="https://en.wikipedia.org/wiki/Fruit" class="btn btn-primary">Read More</a>
+                    <div class="img-content">
+                        <h3>Fruits</h3>
+                        <a href="https://en.wikipedia.org/wiki/Fruit" class="btn btn-primary">Read More</a>
+                    </div>
                 </div>
 
             </div>
             <div class="food-type type2">
                 <div class="img-container">
                     <img src="./img/food2.jpg" alt="">
-                </div>
-                <div class="img-content">
-                    <h3>Vegetable</h3>
-                    <a href="https://en.wikipedia.org/wiki/Vegetable" class="btn btn-primary">Read More</a>
+                    <div class="img-content">
+                        <h3>Vegetable</h3>
+                        <a href="https://en.wikipedia.org/wiki/Vegetable" class="btn btn-primary">Read More</a>
+                    </div>
                 </div>
             </div>
             <div class="food-type type3">
                 <div class="img-container">
                     <img src="./img/food3.jpg" alt="">
-                </div>
-                <div class="img-content">
-                    <h3>Grains</h3>
-                    <a href="https://en.wikipedia.org/wiki/Grain" class="btn btn-primary">Read More</a>
+                    <div class="img-content">
+                        <h3>Grains</h3>
+                        <a href="https://en.wikipedia.org/wiki/Grain" class="btn btn-primary">Read More</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <section id="food-menu">
+        <h2 class="food-menu-heading">
+            Food Menu
+        </h2>
+        <div class="food-menu-container container">
+            <div class="food-menu-item">
+                <div class="food-image">
+                    <img src="./img/food-menu1.jpg" alt="">
+                </div>
+                <div class="food-decription">
+                    <h2 class="food-title">
+                     Food Menu Item 1
+                    </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, iusto?</p>
+                    <p class="food-price">Price: &#8377; 250</p>
+                </div>
+            </div>
+            <div class="food-menu-item">
+                <div class="food-image">
+                    <img src="./img/food-menu2.jpg" alt="">
+                </div>
+                <div class="food-decription">
+                    <h2 class="food-title">
+                     Food Menu Item 2
+                    </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, iusto?</p>
+                    <p class="food-price">Price: &#8377; 250</p>
+                </div>
+            </div>
+            <div class="food-menu-item">
+                <div class="food-image">
+                    <img src="./img/food-menu3.jpg" alt="">
+                </div>
+                <div class="food-decription">
+                    <h2 class="food-title">
+                     Food Menu Item 3
+                    </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, iusto?</p>
+                    <p class="food-price">Price: &#8377; 250</p>
+                </div>
+            </div>
+            <div class="food-menu-item">
+                <div class="food-image">
+                    <img src="./img/food-menu4.jpg" alt="">
+                </div>
+                <div class="food-decription">
+                    <h2 class="food-title">
+                     Food Menu Item 4
+                    </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, iusto?</p>
+                    <p class="food-price">Price: &#8377; 250</p>
+                </div>
+            </div>
+            <div class="food-menu-item">
+                <div class="food-image">
+                    <img src="./img/food-menu5.jpg" alt="">
+                </div>
+                <div class="food-decription">
+                    <h2 class="food-title">
+                     Food Menu Item 5
+                    </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, iusto?</p>
+                    <p class="food-price">Price: &#8377; 250</p>
+                </div>
+            </div>
+            <div class="food-menu-item">
+                <div class="food-image">
+                    <img src="./img/food-menu6.jpg" alt="">
+                </div>
+                <div class="food-decription">
+                    <h2 class="food-title">
+                     Food Menu Item 6
+                    </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, iusto?</p>
+                    <p class="food-price">Price: &#8377; 250</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonial">
+        <h2 class="testimonial-title">
+            What Our Customer Say
+        </h2>
+        <div class="testimonial-container container">
+            <div class="testionial-box">
+                <div class="star-rating">
+                   <span class="fa fa-star checked"></span>
+                   <span class="fa fa-star checked"></span>
+                   <span class="fa fa-star checked"></span>
+                   <span class="fa fa-star checked"></span>
+                   <span class="fa fa-star checked"></span>
+                </div>
+                <p class="testimonial-text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore consequuntur ut eligendi consequatur quod quis.
+                </p>
+                <div class="customer-details">
+                    <div class="customer-photo"><img src="./img/male-photo1.jpg" alt=""></div>
+                    <p class="customer-name">Jhon Doe</p>
+                </div>
+            </div>
+            <div class="testionial-box">
+                <div class="star-rating">
+                   <span class="fa fa-star checked"></span>
+                   <span class="fa fa-star checked"></span>
+                   <span class="fa fa-star checked"></span>
+                   <span class="fa fa-star checked"></span>
+                   <span class="fa fa-star checked"></span>
+                </div>
+                <p class="testimonial-text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore consequuntur ut eligendi consequatur quod quis.
+                </p>
+                <div class="customer-details">
+                    <div class="customer-photo"><img src="./img/male-photo2.jpg" alt=""></div>
+                    <p class="customer-name">Jin Doe</p>
+                </div>
+            </div>
+            <div class="testionial-box">
+                <div class="star-rating">
+                   <span class="fa fa-star checked"></span>
+                   <span class="fa fa-star checked"></span>
+                   <span class="fa fa-star checked"></span>
+                   <span class="fa fa-star checked"></span>
+                   <span class="fa fa-star checked"></span>
+                </div>
+                <p class="testimonial-text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore consequuntur ut eligendi consequatur quod quis.
+                </p>
+                <div class="customer-details">
+                    <div class="customer-photo"><img src="./img/male-photo3.jpg" alt=""></div>
+                    <p class="customer-name">Jholy Doe</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-container container">
+            <div class="contact-img">
+                <img src="./img/restraunt-image.jpg" alt="">
+            </div>
+            <div class="contact-form">
+                <h2>Contact Us</h2>
+                <input type="text" name="" id="" placeholder="Name">
+                <input type="email" name="" id="" placeholder="E-mail">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Type Your Message Here"></textarea>
+                <a href="#" class="btn btn-primary">Submit</a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container container">
+            <h2>Resturant Website &#169; 2023, all rights reserved. </h2>
+        </div>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
 
 </body>
 
