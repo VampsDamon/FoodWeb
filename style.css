@@ -491,6 +491,7 @@ footer h2{
     .menu-items li{
         padding:.3em;
         font-size: 2rem;
+        margin-left:4.5rem ;
         
     }
     .onclick{
@@ -499,7 +500,7 @@ footer h2{
     }
     .links{
         position: relative;
-        top: 68%;
+        top: 54%;
         display: block;
         /* margin: auto; */
     }
@@ -507,7 +508,13 @@ footer h2{
         float: left;
         margin-left: 3rem;
         padding: .1em;
+        margin-left:4rem ;
     }
+    .img-content h3{
+        font-size: 2rem;
+    }
+    .img-content a{
+        font-size: .6rem;    }
 }
 @media (max-width:400px) and (min-width:100px){
     html{
@@ -523,15 +530,16 @@ footer h2{
         flex-direction: column;
         left:-2%;
         height: 100vh;
-        width: 250px;
+        width: 200px;
         padding: .3em;
         transform: translateX(-100%);
         transition: all .3s ease-in-out;
         
     }
     .menu-items li {
-        padding:.4em;
-        font-size: 3rem;
+        padding:.3em;
+        font-size: 2rem;
+        margin-left:3.9rem ;
         
     }
     .onclick{
@@ -540,7 +548,7 @@ footer h2{
     }
     .links{
         position: relative;
-        top: 68%;
+        top: 67%;
         display: block;
         /* margin: auto; */
     }
@@ -549,4 +557,9 @@ footer h2{
         margin-left: 3rem;
         padding: .1em;
     }
+    .img-content h3{
+        font-size: 2rem;
+    }
+    .img-content a{
+        font-size: .6rem;    }
 }
